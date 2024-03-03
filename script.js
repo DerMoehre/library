@@ -30,6 +30,11 @@ function toggleRead (index) {
     renderBook();
 }
 
+function removeBook (index) {
+    myLibrary.splice(index, 1);
+    renderBook();
+}
+
 function closeButton () {
     let closeButton = document.querySelector('.btn_remove');
     closeButton.addEventListener('click', () => {
@@ -90,7 +95,7 @@ function generateBookCardHtml(index, title, author, page, read) {
         <p class="author">${author}</p>
         <p class="pages">${page}</p>
         <button onclick="toggleRead(${index})" class="read ${read}">Read</button>
-        <button class="remove">Remove</button>
+        <button onclick="removeBook(${index})" class="remove">Remove</button>
     </div>
 `;
 }
