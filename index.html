@@ -7,7 +7,7 @@
     <title>Library</title>
 </head>
 <body>
-    <div class="bg_container">
+    <div class="bg_container d_none">
         <div class="modal">
             <fieldset>
                     <label for="input_title">Title</label>
@@ -21,13 +21,14 @@
                 <div class="bottom_modal">
                     <div class="modal_read">
                         <label for="input_read">Read</label>
-                        <input type="checkbox" id="input_read" name="input_read">
+                        <input type="checkbox" id="input_read" name="input_read" value="on">
                     </div>
-                    <button class="btn_submit" type="submit">Submit</button>
-                </div>
-                    
+                    <div class="modal_control">
+                        <button class="btn_submit" type="submit">Submit</button>
+                        <button class="btn_remove">Close</button>
+                    </div>
+                </div>    
             </fieldset>
-
         </div>
     </div>
     <div class="main_content">

@@ -38,23 +38,28 @@ input[type='checkbox']{
 
 .bottom_modal {
     display: flex;
-    justify-content: space-between;
     align-items: end;
+    justify-content: space-between;
 }
 
-.btn_submit {
+.modal_control {
+    display: flex;
+    gap: 8px;
+}
+
+.btn_submit, .btn_remove {
     height: 36px;
     border: none;
     background-color: var(--color-light-green);
     border-radius: 16px;
 }
 
-.d_none {
-    display: none;
+.btn_remove {
+    background-color: var(--color-light-red);
 }
 
 .bg_container {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     position: absolute;
     inset: 0;
     z-index: 1;
@@ -63,11 +68,15 @@ input[type='checkbox']{
     align-items: center;
 }
 
+.d_none {
+    display: none;
+}
+
 .modal {
     background-color: var(--color-highlight);
     border-radius: 16px;
     height: 400px;
-    width: 300px;
+    width: 350px;
     box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.67);
 }
 
@@ -130,7 +139,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    word-break: break-all;
+    word-break: break-word;
     max-width: 300px;
     border-radius: 16px;
     padding: 20px;
