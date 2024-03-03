@@ -17,12 +17,17 @@
                     <input type="text" id="input_author" name="input_author" pattern="^[a-zA-Z]+$">
 
                     <label for="input_page">Pages</label>
-                    <input type="number" id="input_page" name="input_page" pattern="^[a-zA-Z]+$">
-
-                    <label for="input_read">Read</label>
-                    <input type="checkbox" id="input_read" name="input_read">
+                    <input type="number" id="input_page" name="input_page" min="1">
+                <div class="bottom_modal">
+                    <div class="modal_read">
+                        <label for="input_read">Read</label>
+                        <input type="checkbox" id="input_read" name="input_read">
+                    </div>
+                    <button class="btn_submit" type="submit">Submit</button>
+                </div>
+                    
             </fieldset>
-            
+
         </div>
     </div>
     <div class="main_content">

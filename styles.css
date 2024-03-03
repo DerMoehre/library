@@ -20,6 +20,33 @@ fieldset {
 
 label {
     font-size: 28px;
+    margin-top: 16px;
+}
+
+input {
+    height: 28px;
+}
+
+input[type='checkbox']{
+    accent-color: var(--color-light-green);
+}
+
+.modal_read {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom_modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.btn_submit {
+    height: 36px;
+    border: none;
+    background-color: var(--color-light-green);
+    border-radius: 16px;
 }
 
 .d_none {
@@ -40,7 +67,7 @@ label {
     background-color: var(--color-highlight);
     border-radius: 16px;
     height: 400px;
-    width: 400px;
+    width: 300px;
     box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.67);
 }
 
